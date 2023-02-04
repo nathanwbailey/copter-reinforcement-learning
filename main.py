@@ -19,6 +19,6 @@ state = p.getGameState()
 len_state = len(state)
 n_actions = len(action_dict)
 
-agent = agent.Agent(BATCH_SIZE=32, MEMORY_SIZE=100000, GAMMA=0.99, input_dim=len_state, output_dim=n_actions, action_dim=n_actions, action_dict=action_dict, EPS_START=1.0, EPS_END=0.001, EPS_DECAY_VALUE=0.99999995, network_type='DuelingDDQN', lr = 1e-4)
+agent = agent.Agent(BATCH_SIZE=32, MEMORY_SIZE=100000, GAMMA=0.99, input_dim=len_state, output_dim=n_actions, action_dim=n_actions, action_dict=action_dict, EPS_START=1.0, EPS_END=0.001, EPS_DECAY_VALUE=0.9999995, network_type='DDQN', lr = 1e-4)
 
 agent.train(episodes=10000000, env=p)
