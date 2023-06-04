@@ -1,6 +1,7 @@
 # Reinforcement Learning for Copter
 
-A Improved version of a reinforcement learning copter
+A Improved version of a reinforcement learning copter.
+
 Uses either a Double DQN or a Dueling Double DQN.
 
 
